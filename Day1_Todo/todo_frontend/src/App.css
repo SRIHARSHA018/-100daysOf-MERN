@@ -1,0 +1,8 @@
+* {
+  width: 100%;
+  overflow-x: hidden;
+}
+.app__container {
+  display: flex;
+  flex-direction: column;
+}
