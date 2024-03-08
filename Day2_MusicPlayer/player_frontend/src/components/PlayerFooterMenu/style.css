@@ -1,0 +1,61 @@
+.player-foot-container{
+    display: flex;    
+    width: 90%;
+    border-radius: 10px;
+    color:white;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+.icon{
+    position:relative;
+    color:white;
+    padding:15px;
+    border-radius: 50%;
+}
+
+.footer-selected {
+    color:red;
+    background-color: white;
+}
+
+.player-foot-container div span{
+    cursor: pointer;
+}
+.player-foot-container div span:hover{
+    background-color: white;
+    color:black;
+}
+.player-foot-container div span:active{
+    background-color: rgba(255, 255, 255, 0.574);
+    color:black;
+}
+
+.fade-in{
+    animation: fadeIn 0.5s forwards;
+}
+
+.fade-out{
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from{
+        border-radius: 50%;
+    }    
+    to{
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+}
+
+@keyframes fadeOut {
+    from{
+        color:red;
+        background-color: white;
+    }    
+    to{
+        color:white;
+        background-color: transparent;
+    }
+}
